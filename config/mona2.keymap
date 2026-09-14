@@ -242,10 +242,10 @@
         main_layer0 {
             display-name = "main_layer0";
             bindings = <
-&kp Q             &kp W         &kp E         &kp R        &kp T                                      &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F        &kp G                       &kp MINUS      &kp H          &kp J  &kp K      &kp L    &lt 2 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp COLON      &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
-&kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 GRAVE  &lt 2 SPACE  &lt 3 MINUS    &kp ENTER      &kp BACKSPACE                             &kp RIGHT_SHIFT
+&kp Q             &kp W         &kp E         &kp R        &kp T                                  &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G                       &kp TAB    &kp H          &kp J  &kp K      &kp L    &lt 6 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 4 ESC      &kp DEL    &kp N          &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
+&kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 2 SPACE  &lt 3 LANG1    &kp ENTER  &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -254,10 +254,10 @@
         symbol_layer1 {
             display-name = "symbol_layer1";
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION       &kp AT_SIGN            &kp HASH          &kp DOLLAR                                &kp EQUAL      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&kp TAB     &kp PERCENT           &kp CARET              &kp AMPERSAND     &kp ASTERISK                 &kp PERCENT  &kp NUMBER_0   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp PIPE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &kp PLUS     &kp DOT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp LCTRL   &kp LEFT_GUI          &kp LEFT_ALT           &trans            &trans             &trans    &kp ENTER    &kp BACKSPACE                                            &kp RIGHT_SHIFT
+&none        &none            &none     &none    &none                                          &kp INT3          &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
+&kp LA(TAB)  &kp LS(LA(TAB))  &kp SEMI  &kp SQT  &kp LS(LEFT_BRACKET)            &trans         &kp LEFT_BRACKET  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(INT1)
+&none        &none            &none     &none    &none                 &trans    &kp LS(EQUAL)  &kp LS(SLASH)     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kt LS(INT3)
+&trans       &trans           &trans    &trans   &trans                &trans    &trans         &trans                                                                  &kp LALT
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -266,10 +266,10 @@
         func_sc_layer2 {
             display-name = "func_sc_layer2";
             bindings = <
-&kp ESCAPE                  &kp LC(Z)       &kp UP_ARROW    &kp LC(Y)        &kp LC(V)                                  &kp CARET         &kp AMPERSAND      &mkp MB3        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TAB                     &kp LEFT_ARROW  &screenshot     &kp RIGHT_ARROW  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &mkp MB1           &mo 3           &mkp MB2              &henkan
-&mt LEFT_SHIFT KP_NUMBER_0  &kp LC(Y)       &kp DOWN_ARROW  &kp END          &kp HOME      &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LC(SPACE)
-&kp LCTRL                   &trans          &trans          &trans           &trans        &trans       &kp ENTER       &kp BACKSPACE                                                              &kp PIPE
+&kp LEFT_GUI      &kp F7  &kp F8  &kp F9  &kp F10                             &none      &kp LC(Y)     &kt LC(F)  &kp LC(S)  &kp LC(P)
+&kp LALT          &kp F4  &kt F5  &kp F6  &kp F11            &kp PAUSE_BREAK  &kp LC(Z)  &kt LC(C)     &kt LC(V)  &kt LC(X)  &kt LC(S)
+&kt LEFT_CONTROL  &kp F1  &kp F2  &kp F3  &kp F12  &trans    &kt PRINTSCREEN  &kp LC(A)  &kp LA(SEMI)  &none      &none      &kp LC(SPACE)
+&trans            &trans  &trans  &trans  &trans   &trans    &trans           &trans                                         &trans
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -278,10 +278,10 @@
         scroll_layer3 {
             display-name = "scroll_layer3";
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                           &trans  &trans    &mkp MB3  &trans    &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END            &out OUT_TOG  &trans  &mkp MB1  &trans    &mkp MB2  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans        &trans  &mkp MB1  &trans    &mkp MB2  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans        &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &out OUT_TOG  &trans  &trans  &trans  &mo 5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &mo 5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans                          &trans
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -290,10 +290,10 @@
         number_layer4 {
             display-name = "number_layer4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                             &kt SINGLE_QUOTE  &kt KP_N7  &kt KP_N8  &kt KP_N9  &kt KP_SLASH
+&trans  &trans  &trans  &trans  &trans            &kt KP_ASTERISK  &kt KP_N0         &kt KP_N4  &kt KP_N5  &kt KP_N6  &kt KP_MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &none            &kt KP_DOT        &kt KP_N1  &kt KP_N2  &kt KP_N3  &kt KP_PLUS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans           &kt KP_N0                                          &none
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -302,10 +302,10 @@
         ble_layer5 {
             display-name = "ble_layer5";
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5                          &BT0         &BT1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp F6  &kp F7        &kp F8        &kp F9        &trans            &out OUT_TOG  &trans       &trans  &trans        &trans        &studio_unlock
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &bootloader   &trans       &trans  &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans    &trans        &bootloader                                      &bt BT_CLR_ALL
+&bt BT_CLR      &none  &none         &none         &none                                  &BT0   &BT1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bt BT_CLR_ALL  &none  &bt BT_SEL 4  &none         &none                  &out OUT_TOG    &none  &trans  &trans        &trans        &none
+&none           &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none    &bootloader     &none  &trans  &trans        &none         &trans
+&none           &none  &bt BT_SEL 0  &none         &none         &none    &studio_unlock  &none                                      &none
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -314,10 +314,10 @@
         mouse_layer6 {
             display-name = "mouse_layer6";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kt LGUI    &kt HOME        &kt UP_ARROW    &kt END          &kt LSHFT                          &mkp MCLK  &kt PAGE_UP     &kt LG(D)       &kt PAGE_DOWN    &kt K_APP
+&kt LCTRL   &kt LEFT_ARROW  &kt DOWN_ARROW  &kt RIGHT_ARROW  &mo 3                      &trans  &none      &mkp LCLK       &kt UP_ARROW    &mkp RCLK        &mo 3
+&kt LSHIFT  &none           &kt LG(P)       &kt LS(LG(S))    &kt LG(E)  &kt LEFT_ALT    &trans  &none      &kt LEFT_ARROW  &kt DOWN_ARROW  &kt RIGHT_ARROW  &kt LSHFT
+&kt LALT    &trans          &trans          &trans           &trans     &trans          &trans  &trans                                                      &kt LSHFT
             >;
 
             sensor-bindings = <&rsr_default>;
