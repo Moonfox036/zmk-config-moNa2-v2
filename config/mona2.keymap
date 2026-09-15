@@ -87,9 +87,9 @@
 
         layer4_ESC {
             slot = <0>;
-            display-name = "Layer4 ESC";
+            display-name = "ESC";
             key-positions = <38 39>;
-            bindings = <&lt 4 ESC>;
+            bindings = <&kp ESC>;
         };
 
         tab {
@@ -97,6 +97,41 @@
             display-name = "Tab";
             key-positions = <11 12>;
             bindings = <&kp TAB>;
+        };
+
+        shift_tab {
+            slot = <2>;
+            display-name = "Shift + Tab";
+            key-positions = <12 13>;
+            bindings = <&kp LS(TAB)>;
+        };
+
+        mouse_l {
+            slot = <3>;
+            display-name = "Mouse-L";
+            key-positions = <17 18>;
+            bindings = <&mkp LCLK>;
+        };
+
+        mouse_r {
+            slot = <4>;
+            display-name = "Mouse-R";
+            key-positions = <18 19>;
+            bindings = <&mkp RCLK>;
+        };
+
+        l_alt_up_arrow {
+            slot = <5>;
+            display-name = "L-Alt + UP-Arrow";
+            key-positions = <7 6>;
+            bindings = <&kp LA(UP_ARROW)>;
+        };
+
+        l_alt_l_arrow {
+            slot = <6>;
+            display-name = "L-Alt + L-Arrow";
+            key-positions = <29 30>;
+            bindings = <&kp LA(LEFT_ARROW)>;
         };
     };
 
