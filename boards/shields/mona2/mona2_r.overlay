@@ -122,5 +122,11 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-    input-processors = <&mg &mouse_runtime_input_processor &scroll_runtime_input_processor &inertial_scroll>;
+input-processors = <
+        &mg
+        &mouse_runtime_input_processor
+        &scroll_runtime_input_processor
+        &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
+        &inertial_scroll
+    >;
 };
