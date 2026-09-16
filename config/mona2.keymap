@@ -301,7 +301,7 @@
         func_sc_layer2 {
             display-name = "func_sc_layer2";
             bindings = <
-&kp LEFT_GUI      &kp F7  &kp F8  &kp F9  &kp F10                             &none      &kp LC(Y)     &kt LC(F)  &kp LC(S)  &kp LC(P)
+&kp LEFT_GUI      &kp F7  &kp F8  &kp F9  &kp F10                             &kt LC(Y)  &kp LC(H)     &kt LC(F)  &kp LC(S)  &kp LC(P)
 &kp LALT          &kp F4  &kt F5  &kp F6  &kp F11            &kp PAUSE_BREAK  &kp LC(Z)  &kt LC(C)     &kt LC(V)  &kt LC(X)  &kt LC(S)
 &kt LEFT_CONTROL  &kp F1  &kp F2  &kp F3  &kp F12  &trans    &kt PRINTSCREEN  &kp LC(A)  &kp LA(SEMI)  &none      &none      &kp LC(SPACE)
 &trans            &trans  &trans  &trans  &trans   &trans    &trans           &trans                                         &trans
@@ -351,8 +351,8 @@
             bindings = <
 &kt LGUI    &kt HOME        &kt UP_ARROW    &kt END          &kt LSHFT                          &mkp MCLK  &kt PAGE_UP     &kt LG(D)       &kt PAGE_DOWN    &kt K_APP
 &kt LCTRL   &kt LEFT_ARROW  &kt DOWN_ARROW  &kt RIGHT_ARROW  &mo 3                      &trans  &none      &mkp LCLK       &kt UP_ARROW    &mkp RCLK        &mo 3
-&kt LSHIFT  &none           &kt LG(P)       &kt LS(LG(S))    &kt LG(E)  &kt LEFT_ALT    &trans  &none      &kt LEFT_ARROW  &kt DOWN_ARROW  &kt RIGHT_ARROW  &kt LSHFT
-&kt LALT    &trans          &trans          &trans           &trans     &trans          &trans  &trans                                                      &kt LSHFT
+&kt LSHIFT  &none           &kt LG(P)       &kt LS(LG(S))    &kt LG(E)  &kt LEFT_ALT    &trans  &none      &kt LEFT_ARROW  &kt DOWN_ARROW  &kt RIGHT_ARROW  &kt RCTRL
+&kt LALT    &trans          &trans          &trans           &trans     &trans          &trans  &trans                                                      &kt RSHFT
             >;
 
             sensor-bindings = <&rsr_default>;
