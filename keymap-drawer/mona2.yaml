@@ -39,8 +39,8 @@ layers:
   - LEFT ALT
   - {t: LANG2, h: symbol_layer1}
   - {t: SPACE, h: mouse_layer6}
-  - {t: LANG1, h: scroll_layer3}
-  - ENTER
+  - {t: LANG1, h: func_sc_layer2}
+  - {t: ENTER, h: number_layer4}
   - BACKSPACE
   - RIGHT SHIFT
   symbol_layer1:
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
