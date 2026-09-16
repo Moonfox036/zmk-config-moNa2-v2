@@ -38,7 +38,7 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: symbol_layer1}
-  - {t: SPACE, h: func_sc_layer2}
+  - {t: SPACE, h: mouse_layer6}
   - {t: LANG1, h: scroll_layer3}
   - ENTER
   - BACKSPACE
@@ -76,7 +76,7 @@ layers:
   - Sft+1
   - Sft+2
   - Sft+3
-  - {t: Sft+INT3, h: toggle}
+  - Sft+INT3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -92,29 +92,29 @@ layers:
   - F8
   - F9
   - F10
-  - {t: Ctl+Y, h: toggle}
+  - Ctl+Y
   - Ctl+H
-  - {t: Ctl+F, h: toggle}
+  - Ctl+F
   - Ctl+S
   - Ctl+P
   - LALT
   - F4
-  - {t: F5, h: toggle}
+  - F5
   - F6
   - F11
   - PAUSE BREAK
   - Ctl+Z
-  - {t: Ctl+C, h: toggle}
-  - {t: Ctl+V, h: toggle}
-  - {t: Ctl+X, h: toggle}
-  - {t: Ctl+S, h: toggle}
-  - {t: LEFT CONTROL, h: toggle}
+  - Ctl+C
+  - Ctl+V
+  - Ctl+X
+  - Ctl+S
+  - LEFT CONTROL
   - F1
   - F2
   - F3
   - F12
   - {t: ▽, type: trans}
-  - {t: PRINTSCREEN, h: toggle}
+  - PRINTSCREEN
   - Ctl+A
   - Alt+;
   - ''
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,22 +178,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '''', h: toggle}
-  - {t: KP 7, h: toggle}
-  - {t: KP 8, h: toggle}
-  - {t: KP 9, h: toggle}
-  - {t: KP SLASH, h: toggle}
+  - ''''
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP SLASH
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: KP ASTERISK, h: toggle}
-  - {t: KP 0, h: toggle}
-  - {t: KP 4, h: toggle}
-  - {t: KP 5, h: toggle}
-  - {t: KP 6, h: toggle}
-  - {t: KP MINUS, h: toggle}
+  - KP ASTERISK
+  - KP 0
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP MINUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,11 +201,11 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - ''
-  - {t: KP DOT, h: toggle}
-  - {t: KP 1, h: toggle}
-  - {t: KP 2, h: toggle}
-  - {t: KP 3, h: toggle}
-  - {t: KP PLUS, h: toggle}
+  - KP DOT
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP PLUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -213,7 +213,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: KP 0, h: toggle}
+  - KP 0
   - ''
   ble_layer5:
   - BT CLR
@@ -259,40 +259,40 @@ layers:
   - ''
   - ''
   mouse_layer6:
-  - {t: LGUI, h: toggle}
-  - {t: HOME, h: toggle}
-  - {t: UP ARROW, h: toggle}
-  - {t: END, h: toggle}
-  - {t: LSHFT, h: toggle}
+  - LGUI
+  - HOME
+  - UP ARROW
+  - END
+  - LSHFT
   - '&mkp MCLK'
-  - {t: PAGE UP, h: toggle}
-  - {t: Gui+D, h: toggle}
-  - {t: PAGE DOWN, h: toggle}
-  - {t: APP, h: toggle}
-  - {t: LCTRL, h: toggle}
-  - {t: LEFT ARROW, h: toggle}
-  - {t: DOWN ARROW, h: toggle}
-  - {t: RIGHT ARROW, h: toggle}
+  - PAGE UP
+  - Gui+D
+  - PAGE DOWN
+  - APP
+  - LCTRL
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - scroll_layer3
   - {t: ▽, type: trans}
   - ''
   - '&mkp LCLK'
-  - {t: UP ARROW, h: toggle}
+  - UP ARROW
   - '&mkp RCLK'
   - {t: scroll_layer3, type: held}
-  - {t: LSHIFT, h: toggle}
+  - LSHIFT
   - ''
-  - {t: Gui+P, h: toggle}
-  - {t: Sft+Gui+S, h: toggle}
-  - {t: Gui+E, h: toggle}
-  - {t: LEFT ALT, h: toggle}
+  - Gui+P
+  - Sft+Gui+S
+  - Gui+E
+  - LEFT ALT
   - {t: ▽, type: trans}
   - ''
-  - {t: LEFT ARROW, h: toggle}
-  - {t: DOWN ARROW, h: toggle}
-  - {t: RIGHT ARROW, h: toggle}
-  - {t: RCTRL, h: toggle}
-  - {t: LALT, h: toggle}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - RCTRL
+  - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,4 +300,4 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: RSHFT, h: toggle}
+  - RSHFT
