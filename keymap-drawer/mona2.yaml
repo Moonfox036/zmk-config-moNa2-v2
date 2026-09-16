@@ -92,8 +92,8 @@ layers:
   - F8
   - F9
   - F10
-  - ''
-  - Ctl+Y
+  - {t: Ctl+Y, h: toggle}
+  - Ctl+H
   - {t: Ctl+F, h: toggle}
   - Ctl+S
   - Ctl+P
@@ -291,7 +291,7 @@ layers:
   - {t: LEFT ARROW, h: toggle}
   - {t: DOWN ARROW, h: toggle}
   - {t: RIGHT ARROW, h: toggle}
-  - {t: LSHFT, h: toggle}
+  - {t: RCTRL, h: toggle}
   - {t: LALT, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,4 +300,4 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LSHFT, h: toggle}
+  - {t: RSHFT, h: toggle}
