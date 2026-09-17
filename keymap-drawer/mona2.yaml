@@ -45,8 +45,8 @@ layers:
   - RIGHT SHIFT
   symbol_layer1:
   - ''
-  - ''
-  - ''
+  - ']'
+  - '#'
   - ''
   - ''
   - INT3
@@ -126,8 +126,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ESC
+  - DEL
   - {t: ▽, type: trans}
   scroll_layer3:
   - {t: ▽, type: trans}
