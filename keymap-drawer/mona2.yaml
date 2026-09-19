@@ -21,26 +21,26 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: mouse_layer6}
+  - {t: '-', h: mouse_layer4}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
   - B
-  - {t: ESC, h: number_layer4}
+  - {t: ESC, h: number_layer3}
   - DEL
   - N
   - M
   - ','
   - .
-  - {t: /, h: scroll_layer3}
+  - {t: /, h: scroll_layer5}
   - RCTRL
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: symbol_layer1}
-  - {t: SPACE, h: mouse_layer6}
+  - {t: SPACE, h: mouse_layer4}
   - {t: LANG1, h: func_sc_layer2}
-  - {t: ENTER, h: number_layer4}
+  - {t: ENTER, h: number_layer3}
   - BACKSPACE
   - RIGHT SHIFT
   symbol_layer1:
@@ -129,50 +129,7 @@ layers:
   - ESC
   - DEL
   - {t: ▽, type: trans}
-  scroll_layer3:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - OUT TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ble_layer5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ble_layer5
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  number_layer4:
+  number_layer3:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,7 +172,93 @@ layers:
   - {t: ▽, type: trans}
   - KP 0
   - ''
-  ble_layer5:
+  mouse_layer4:
+  - LGUI
+  - HOME
+  - UP ARROW
+  - END
+  - LSHFT
+  - '&mkp MCLK'
+  - PAGE UP
+  - Gui+D
+  - PAGE DOWN
+  - APP
+  - LCTRL
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - scroll_layer5
+  - {t: ▽, type: trans}
+  - ''
+  - '&mkp LCLK'
+  - UP ARROW
+  - '&mkp RCLK'
+  - {t: scroll_layer5, type: held}
+  - LSHIFT
+  - ''
+  - Gui+P
+  - Sft+Gui+S
+  - Gui+E
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - ''
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - RCTRL
+  - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RSHFT
+  scroll_layer5:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ble_layer6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ble_layer6
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ble_layer6:
   - BT CLR
   - ''
   - ''
@@ -258,46 +301,3 @@ layers:
   - '&studio_unlock'
   - ''
   - ''
-  mouse_layer6:
-  - LGUI
-  - HOME
-  - UP ARROW
-  - END
-  - LSHFT
-  - '&mkp MCLK'
-  - PAGE UP
-  - Gui+D
-  - PAGE DOWN
-  - APP
-  - LCTRL
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - scroll_layer3
-  - {t: ▽, type: trans}
-  - ''
-  - '&mkp LCLK'
-  - UP ARROW
-  - '&mkp RCLK'
-  - {t: scroll_layer3, type: held}
-  - LSHIFT
-  - ''
-  - Gui+P
-  - Sft+Gui+S
-  - Gui+E
-  - LEFT ALT
-  - {t: ▽, type: trans}
-  - ''
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - RCTRL
-  - LALT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RSHFT
