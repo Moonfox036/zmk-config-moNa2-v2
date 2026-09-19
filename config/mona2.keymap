@@ -85,7 +85,7 @@
     runtime_combo_defaults {
         compatible = "cormoran,runtime-combo-defaults";
 
-        ESC {
+        esc {
             slot = <0>;
             display-name = "ESC";
             key-positions = <38 39>;
