@@ -278,9 +278,9 @@
             display-name = "main_layer0";
             bindings = <
 &kp Q             &kp W         &kp E         &kp R        &kp T                                    &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F        &kp G                       &kp TAB      &kp H          &kp J  &kp K      &kp L    &lt 6 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 4 ESC      &kp DEL      &kp N          &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
-&kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 6 SPACE  &lt 2 LANG1    &lt 4 ENTER  &kp BACKSPACE                             &kp RIGHT_SHIFT
+&kp A             &kp S         &kp D         &kp F        &kp G                       &kp TAB      &kp H          &kp J  &kp K      &kp L    &lt 4 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 3 ESC      &kp DEL      &kp N          &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
+&kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 4 SPACE  &lt 2 LANG1    &lt 3 ENTER  &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -310,20 +310,8 @@
             sensor-bindings = <&rsr_default>;
         };
 
-        scroll_layer3 {
-            display-name = "scroll_layer3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &out OUT_TOG  &trans  &trans  &trans  &mo 5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &mo 5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans                          &trans
-            >;
-
-            sensor-bindings = <&rsr_default>;
-        };
-
-        number_layer4 {
-            display-name = "number_layer4";
+        number_layer3 {
+            display-name = "number_layer3";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                             &kp SINGLE_QUOTE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_SLASH
 &trans  &trans  &trans  &trans  &trans            &kp KP_ASTERISK  &kp KP_N0         &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
@@ -334,25 +322,37 @@
             sensor-bindings = <&rsr_default>;
         };
 
-        ble_layer5 {
-            display-name = "ble_layer5";
+        mouse_layer4 {
+            display-name = "mouse_layer4";
             bindings = <
-&bt BT_CLR      &none  &none         &none         &none                                  &BT0   &BT1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&bt BT_CLR_ALL  &none  &bt BT_SEL 4  &none         &none                  &out OUT_TOG    &none  &trans  &trans        &trans        &none
-&none           &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none    &bootloader     &none  &trans  &trans        &none         &trans
-&none           &none  &bt BT_SEL 0  &none         &none         &none    &studio_unlock  &none                                      &none
+&kp LGUI    &kp HOME        &kp UP_ARROW    &kp END          &kp LSHFT                          &mkp MCLK  &kp PAGE_UP     &kp LG(D)       &kp PAGE_DOWN    &kp K_APP
+&kp LCTRL   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 5                      &trans  &none      &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mo 5
+&kp LSHIFT  &none           &kp LG(P)       &kp LS(LG(S))    &kp LG(E)  &kp LEFT_ALT    &trans  &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RCTRL
+&kp LALT    &trans          &trans          &trans           &trans     &trans          &trans  &trans                                                      &kp RSHFT
             >;
 
             sensor-bindings = <&rsr_default>;
         };
 
-        mouse_layer6 {
-            display-name = "mouse_layer6";
+        scroll_layer5 {
+            display-name = "scroll_layer5";
             bindings = <
-&kp LGUI    &kp HOME        &kp UP_ARROW    &kp END          &kp LSHFT                          &mkp MCLK  &kp PAGE_UP     &kp LG(D)       &kp PAGE_DOWN    &kp K_APP
-&kp LCTRL   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 3                      &trans  &none      &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mo 3
-&kp LSHIFT  &none           &kp LG(P)       &kp LS(LG(S))    &kp LG(E)  &kp LEFT_ALT    &trans  &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RCTRL
-&kp LALT    &trans          &trans          &trans           &trans     &trans          &trans  &trans                                                      &kp RSHFT
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &out OUT_TOG  &trans  &trans  &trans  &mo 6   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &mo 6   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans                          &trans
+            >;
+
+            sensor-bindings = <&rsr_default>;
+        };
+
+        ble_layer6 {
+            display-name = "ble_layer6";
+            bindings = <
+&bt BT_CLR      &none  &none         &none         &none                                  &BT0   &BT1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bt BT_CLR_ALL  &none  &bt BT_SEL 4  &none         &none                  &out OUT_TOG    &none  &trans  &trans        &trans        &none
+&none           &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none    &bootloader     &none  &trans  &trans        &none         &trans
+&none           &none  &bt BT_SEL 0  &none         &none         &none    &studio_unlock  &none                                      &none
             >;
 
             sensor-bindings = <&rsr_default>;
