@@ -283,6 +283,29 @@
             ccw-binding = <&msc SCRL_UP>;
         };
 
+        // 標準ZMKのセンサー回転Behavior
+        // 時計回り(CW) / 反時計回り(CCW)の順で指定
+        //
+        // 縦スクロール:
+        //   CW  = 下
+        //   CCW = 上
+        encoder_scroll: encoder_scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <16>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+
+        // 横スクロール:
+        //   CW  = 右
+        //   CCW = 左
+        encoder_hscroll: encoder_hscroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <16>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+        };
+
         tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -329,7 +352,7 @@
 &kp RCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 4 SPACE  &lt 2 LANG1    &lt 3 ENTER  &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         symbol_layer1 {
@@ -341,7 +364,7 @@
 &trans       &trans           &trans           &trans   &trans                &trans    &trans         &trans                                                                  &kp LALT
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         func_sc_layer2 {
@@ -353,7 +376,7 @@
 &trans            &trans  &trans  &trans  &trans   &trans    &kp ESC          &kp DEL                                        &trans
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         number_layer3 {
@@ -365,7 +388,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans           &kp KP_N0                                          &none
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         mouse_layer4 {
@@ -377,7 +400,7 @@
 &kp LALT    &trans          &trans          &trans           &trans     &trans          &trans  &trans                                                      &kp RSHFT
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_hscroll>;
         };
 
         scroll_layer5 {
@@ -389,7 +412,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans                          &trans
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_scroll>;
         };
 
         ble_layer6 {
@@ -401,7 +424,7 @@
 &none           &none  &BT0   &none  &none  &none    &studio_unlock  &none                          &none
             >;
 
-            sensor-bindings = <&rsr_default>;
+            sensor-bindings = <&encoder_scroll>;
         };
     };
 };
