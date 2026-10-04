@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: mouse_layer4}
   - {t: LANG1, h: func_sc_layer2}
   - {t: ENTER, h: number_layer3}
-  - BACKSPACE
+  - {t: BACKSPACE, h: LEFT SHIFT}
   - RIGHT SHIFT
   symbol_layer1:
   - ''
@@ -55,7 +55,7 @@ layers:
   - Sft+9
   - '='
   - Alt+TAB
-  - Sft+Alt+TAB
+  - LEFT ALT
   - ;
   - ''''
   - Sft+[
@@ -65,7 +65,7 @@ layers:
   - Sft+5
   - Sft+6
   - Sft+INT1
-  - ''
+  - LEFT SHIFT
   - ''
   - ''
   - ''
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - LALT
   func_sc_layer2:
   - LEFT GUI
@@ -117,7 +117,7 @@ layers:
   - PRINTSCREEN
   - Ctl+A
   - Alt+;
-  - ''
+  - Alt+A
   - ''
   - Ctl+SPACE
   - {t: ▽, type: trans}
@@ -140,8 +140,8 @@ layers:
   - KP 8
   - KP 9
   - KP SLASH
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CAPSLOCK
+  - CAPSLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,7 +151,7 @@ layers:
   - KP 5
   - KP 6
   - KP MINUS
-  - {t: ▽, type: trans}
+  - LEFT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
-  - ''
+  - RIGHT SHIFT
   mouse_layer4:
   - LGUI
   - HOME
@@ -189,7 +189,7 @@ layers:
   - RIGHT ARROW
   - scroll_layer5
   - {t: ▽, type: trans}
-  - ''
+  - '&mkp MCLK'
   - '&mkp LCLK'
   - UP ARROW
   - '&mkp RCLK'
@@ -213,7 +213,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - RSHFT
   scroll_layer5:
   - {t: ▽, type: trans}
@@ -226,7 +226,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mg_set_0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
