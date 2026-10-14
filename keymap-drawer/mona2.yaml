@@ -34,7 +34,7 @@ layers:
   - ','
   - .
   - {t: /, h: scroll_layer5}
-  - RCTRL
+  - LCTRL
   - LEFT WIN
   - LEFT ALT
   - {t: LANG2, h: symbol_layer1}
