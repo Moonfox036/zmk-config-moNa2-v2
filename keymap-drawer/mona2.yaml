@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LCTRL}
   - S
   - D
   - F
@@ -22,13 +22,13 @@ layers:
   - K
   - L
   - {t: '-', h: mouse_layer4}
-  - {t: Z, h: LEFT SHIFT}
+  - {t: Z, h: LSHFT}
   - X
   - C
   - V
   - B
   - {t: ESC, h: number_layer3}
-  - DEL
+  - LEFT GUI
   - N
   - M
   - ','
