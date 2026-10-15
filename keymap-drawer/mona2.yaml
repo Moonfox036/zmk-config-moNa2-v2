@@ -144,7 +144,7 @@ layers:
   - CAPSLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
   - KP ASTERISK
   - KP 0
   - KP 4
@@ -156,7 +156,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: MUTE, type: held}
+  - {type: held}
   - ''
   - KP DOT
   - KP 1
