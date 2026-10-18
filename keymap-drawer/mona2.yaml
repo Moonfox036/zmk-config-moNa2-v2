@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - {t: ESC, h: number_layer3}
-  - LEFT GUI
+  - DEL
   - N
   - M
   - ','
