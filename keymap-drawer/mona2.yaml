@@ -10,8 +10,8 @@ layers:
   - U
   - I
   - O
-  - P
-  - {t: A, h: LCTRL}
+  - {t: P, h: scroll_layer5}
+  - A
   - S
   - D
   - F
@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: mouse_layer4}
   - {t: LANG1, h: func_sc_layer2}
   - {t: ENTER, h: number_layer3}
-  - {t: BACKSPACE, h: LEFT SHIFT}
+  - BSPC
   - RIGHT SHIFT
   symbol_layer1:
   - ''
@@ -108,7 +108,7 @@ layers:
   - Ctl+V
   - Ctl+X
   - Ctl+S
-  - LEFT CONTROL
+  - LSHFT
   - F1
   - F2
   - F3
@@ -120,7 +120,7 @@ layers:
   - Alt+A
   - ''
   - Ctl+SPACE
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -224,8 +224,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ble_layer6
+  - {type: held}
   - '&mg_set_0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ble_layer6
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -267,8 +267,8 @@ layers:
   - '&BT0'
   - '&BT1'
   - '&BT2'
-  - '&BT3'
-  - '&BT4'
+  - {type: held}
+  - {type: held}
   - BT CLR ALL
   - ''
   - '&BT4'
@@ -276,9 +276,9 @@ layers:
   - ''
   - OUT TOG
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - '&BT3'
+  - '&BT4'
+  - ''
   - ''
   - ''
   - ''
@@ -288,10 +288,10 @@ layers:
   - ''
   - '&bootloader'
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
-  - {type: held}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - '&BT0'
