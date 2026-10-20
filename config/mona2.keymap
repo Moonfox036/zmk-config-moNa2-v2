@@ -360,10 +360,10 @@
         main_layer0 {
             display-name = "main_layer0";
             bindings = <
-&kp Q        &kp W         &kp E         &kp R        &kp T                                    &kp Y                     &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A  &kp S         &kp D         &kp F        &kp G                       &kp TAB      &kp H                     &kp J  &kp K      &kp L    &lt 4 MINUS
-&mt LSHFT Z  &kp X         &kp C         &kp V        &kp B        &lt 3 ESC      &kp DEL      &kp N                     &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
-&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 4 SPACE  &lt 2 LANG1    &lt 3 ENTER  &mt LEFT_SHIFT BACKSPACE                             &kp RIGHT_SHIFT
+&kp Q        &kp W         &kp E         &kp R        &kp T                                    &kp Y     &kp U  &kp I      &kp O    &lt 5 P
+&kp A        &kp S         &kp D         &kp F        &kp G                       &kp TAB      &kp H     &kp J  &kp K      &kp L    &lt 4 MINUS
+&mt LSHFT Z  &kp X         &kp C         &kp V        &kp B        &lt 3 ESC      &kp DEL      &kp N     &kp M  &kp COMMA  &kp DOT  &lt 5 SLASH
+&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &lt 4 SPACE  &lt 2 LANG1    &lt 3 ENTER  &kp BSPC                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -384,10 +384,10 @@
         func_sc_layer2 {
             display-name = "func_sc_layer2";
             bindings = <
-&kp LEFT_GUI      &kp F7  &kp F8  &kp F9  &kp F10                             &kp LC(Y)  &kp LC(H)     &kp LC(F)  &kp LC(S)  &kp LC(P)
-&kp LALT          &kp F4  &kp F5  &kp F6  &kp F11            &kp PAUSE_BREAK  &kp LC(Z)  &kp LC(C)     &kp LC(V)  &kp LC(X)  &kp LC(S)
-&kp LEFT_CONTROL  &kp F1  &kp F2  &kp F3  &kp F12  &trans    &kp PRINTSCREEN  &kp LC(A)  &kp LA(SEMI)  &kp LA(A)  &none      &kp LC(SPACE)
-&trans            &trans  &trans  &trans  &trans   &trans    &kp ESC          &kp DEL                                        &kp ENTER
+&kp LEFT_GUI  &kp F7  &kp F8  &kp F9  &kp F10                             &kp LC(Y)  &kp LC(H)     &kp LC(F)  &kp LC(S)  &kp LC(P)
+&kp LALT      &kp F4  &kp F5  &kp F6  &kp F11            &kp PAUSE_BREAK  &kp LC(Z)  &kp LC(C)     &kp LC(V)  &kp LC(X)  &kp LC(S)
+&kp LSHFT     &kp F1  &kp F2  &kp F3  &kp F12  &trans    &kp PRINTSCREEN  &kp LC(A)  &kp LA(SEMI)  &kp LA(A)  &none      &kp LC(SPACE)
+&kp LCTRL     &trans  &trans  &trans  &trans   &trans    &kp ESC          &kp DEL                                        &kp ENTER
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -420,10 +420,10 @@
         scroll_layer5 {
             display-name = "scroll_layer5";
             bindings = <
-&trans     &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans
-&mg_set_0  &trans  &trans  &trans  &trans            &out OUT_TOG  &trans  &trans  &trans  &mo 6   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &mo 6   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &trans        &trans                          &trans
+&trans     &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &mo 6  &trans
+&mg_set_0  &trans  &trans  &trans  &trans            &out OUT_TOG  &trans  &trans  &trans  &mo 6  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &mo 6  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &trans        &trans                         &trans
             >;
 
             sensor-bindings = <&rsr_default>;
@@ -432,10 +432,10 @@
         ble_layer6 {
             display-name = "ble_layer6";
             bindings = <
-&bt BT_CLR      &none  &none  &none  &none                           &BT0   &BT1    &BT2    &BT3    &BT4
-&bt BT_CLR_ALL  &none  &BT4   &none  &none           &out OUT_TOG    &none  &trans  &trans  &trans  &none
-&none           &none  &BT1   &BT2   &BT3   &none    &bootloader     &none  &trans  &trans  &none   &trans
-&none           &none  &BT0   &none  &none  &none    &studio_unlock  &none                          &none
+&bt BT_CLR      &none  &none  &none  &none                           &BT0   &BT1   &BT2   &none  &none
+&bt BT_CLR_ALL  &none  &BT4   &none  &none           &out OUT_TOG    &none  &BT3   &BT4   &none  &none
+&none           &none  &BT1   &BT2   &BT3   &none    &bootloader     &none  &none  &none  &none  &trans
+&none           &none  &BT0   &none  &none  &none    &studio_unlock  &none                       &none
             >;
 
             sensor-bindings = <&rsr_default>;
