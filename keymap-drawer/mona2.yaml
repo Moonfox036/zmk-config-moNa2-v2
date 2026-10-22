@@ -33,7 +33,7 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: scroll_layer5}
+  - {t: /, h: RSHFT}
   - LCTRL
   - LEFT WIN
   - LEFT ALT
@@ -42,7 +42,7 @@ layers:
   - {t: LANG1, h: func_sc_layer2}
   - {t: ENTER, h: number_layer3}
   - BSPC
-  - RIGHT SHIFT
+  - RCTRL
   symbol_layer1:
   - ''
   - ']'
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
-  - RIGHT SHIFT
+  - {t: ▽, type: trans}
   mouse_layer4:
   - LGUI
   - HOME
@@ -205,7 +205,7 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - RCTRL
+  - RSHFT
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -214,7 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACKSPACE
-  - RSHFT
+  - RCTRL
   scroll_layer5:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
