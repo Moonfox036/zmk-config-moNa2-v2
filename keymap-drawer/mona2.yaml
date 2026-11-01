@@ -130,7 +130,7 @@ layers:
   - DEL
   - ENTER
   number_layer3:
-  - {t: ▽, type: trans}
+  - KP NLCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
