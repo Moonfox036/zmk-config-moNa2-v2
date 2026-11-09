@@ -408,10 +408,10 @@
         mouse_layer4 {
             display-name = "mouse_layer4";
             bindings = <
-&kp LGUI    &kp HOME        &kp UP_ARROW    &kp END          &kp LSHFT                          &mkp MCLK      &kp PAGE_UP     &kp LG(D)       &kp PAGE_DOWN    &kp K_APP
-&kp LCTRL   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 5                      &trans  &mkp MCLK      &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mo 5
-&kp LSHIFT  &none           &kp LG(P)       &kp LS(LG(S))    &kp LG(E)  &kp LEFT_ALT    &trans  &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT
-&kp LALT    &trans          &trans          &trans           &trans     &trans          &trans  &kp BACKSPACE                                                   &kp RCTRL
+&kp LGUI    &kp HOME        &kp UP_ARROW    &kp END          &kp LSHFT                       &mkp MCLK      &kp PAGE_UP     &kp LG(D)       &kp PAGE_DOWN    &kp K_APP
+&kp LCTRL   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 5                   &trans  &mkp MCLK      &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mo 5
+&kp LSHIFT  &none           &kp LG(P)       &kp LS(LG(S))    &kp LALT   &kp LG(E)    &trans  &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT
+&kp LALT    &trans          &trans          &trans           &trans     &trans       &trans  &kp BACKSPACE                                                   &kp RCTRL
             >;
 
             sensor-bindings = <&rsr_default>;
