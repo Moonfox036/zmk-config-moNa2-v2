@@ -198,8 +198,8 @@ layers:
   - ''
   - Gui+P
   - Sft+Gui+S
+  - LALT
   - Gui+E
-  - LEFT ALT
   - {t: ▽, type: trans}
   - ''
   - LEFT ARROW
