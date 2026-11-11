@@ -105,6 +105,7 @@
         stroke-size = <200>;
         idle-timeout-ms = <150>;
         gesture-cooldown-ms = <500>;
+        enable-eager-mode;
 
         placeholder {
             pattern = <GESTURE_UP GESTURE_RIGHT>;
