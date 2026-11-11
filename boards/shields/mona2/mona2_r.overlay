@@ -102,14 +102,18 @@
         compatible = "zmk,input-processor-mouse-gesture";
         #input-processor-cells = <0>;
         /* Activate only while &mg_set is held so normal mouse/scroll layers do not trigger gestures. */
-        stroke-size = <200>;
-        idle-timeout-ms = <150>;
-        gesture-cooldown-ms = <500>;
+        stroke-size = <20>;
+        idle-timeout-ms = <50>;
+        gesture-cooldown-ms = <50>;
         enable-eager-mode;
 
-        placeholder {
-            pattern = <GESTURE_UP GESTURE_RIGHT>;
-            bindings = <&kp ESC>;
+        tab_prev {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LC(PG_UP)>;
+        };
+        tab_next {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LC(PG_DN)>;
         };
     };
     inertial_scroll: inertial_scroll {
