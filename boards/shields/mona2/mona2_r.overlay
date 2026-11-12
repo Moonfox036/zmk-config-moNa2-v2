@@ -102,7 +102,7 @@
         compatible = "zmk,input-processor-mouse-gesture";
         #input-processor-cells = <0>;
         /* Activate only while &mg_set is held so normal mouse/scroll layers do not trigger gestures. */
-        stroke-size = <20>;
+        stroke-size = <100>;
         idle-timeout-ms = <50>;
         gesture-cooldown-ms = <50>;
         enable-eager-mode;
