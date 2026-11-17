@@ -1,7 +1,7 @@
-# mona2_r-pmw3610 のみを対象に、zephyr.elf も含めてビルドする手動実行専用ワークフロー。
+# mona2_r-pmw3610 のみを対象に、ELF（zmk.elf）も含めてビルドする手動実行専用ワークフロー。
 # zmkfirmware/zmk の再利用ワークフロー build-user-config.yml@main の build ジョブを基にしている。
 # 変更点は、対象を build.yaml の mona2_r-pmw3610 の1件に限定したことと、
-# アーティファクトに zephyr/zmk.uf2 と zephyr/zephyr.elf の両方を含めたことだけである。
+# アーティファクトに zephyr/zmk.uf2 と zephyr/zmk.elf（最終リンク成果物）の両方を含めたことだけである。
 # ファームウェアのソースや既存の build.yml / build.yaml は変更しない。
 name: Build ELF (mona2_r-pmw3610)
 
@@ -161,10 +161,15 @@ jobs:
           then
             cp "${{ env.build_dir }}/zephyr/zmk.uf2" "${{ env.build_dir }}/artifacts/zmk.uf2"
           fi
+          if [ -f "${{ env.build_dir }}/zephyr/zmk.elf" ]
+          then
+            cp "${{ env.build_dir }}/zephyr/zmk.elf" "${{ env.build_dir }}/artifacts/zmk.elf"
+          fi
           if [ -f "${{ env.build_dir }}/zephyr/zephyr.elf" ]
           then
             cp "${{ env.build_dir }}/zephyr/zephyr.elf" "${{ env.build_dir }}/artifacts/zephyr.elf"
           fi
+          ls -l "${{ env.build_dir }}/artifacts"
 
       - name: Archive (${{ env.display_name }})
         uses: actions/upload-artifact@v7
