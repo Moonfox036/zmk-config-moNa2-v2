@@ -266,10 +266,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp TAB>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp TAB>,
                 <&macro_pause_for_release>,
-                <&macro_release &kp LALT>;
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "ALT_TAB";
         };
     };
@@ -384,7 +388,7 @@
             display-name = "symbol_layer1";
             bindings = <
 &none           &kp RBKT      &kp NON_US_HASH  &none    &none                                          &kp INT3          &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
-&kp LA(TAB)     &kp LEFT_ALT  &kp SEMI         &kp SQT  &kp LS(LEFT_BRACKET)            &trans         &kp LEFT_BRACKET  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(INT1)
+&alt_tab        &kp LEFT_ALT  &kp SEMI         &kp SQT  &kp LS(LEFT_BRACKET)            &trans         &kp LEFT_BRACKET  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(INT1)
 &kp LEFT_SHIFT  &none         &none            &none    &none                 &trans    &kp LS(EQUAL)  &kp LS(SLASH)     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(INT3)
 &trans          &trans        &trans           &trans   &trans                &trans    &trans         &kp BACKSPACE                                                           &kp LALT
             >;
@@ -419,8 +423,8 @@
         mouse_layer4 {
             display-name = "mouse_layer4";
             bindings = <
-&kp LGUI    &kp HOME        &kp UP_ARROW    &kp END          &kp LSHFT                       &mkp MCLK      &kp PAGE_UP     &kp LG(D)       &kp PAGE_DOWN    &kp K_APP
-&kp LCTRL   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 5                   &trans  &mkp MCLK      &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mo 5
+&kp LGUI    &kp HOME        &kp UP_ARROW    &kp END          &kp LSHFT                       &kp LG(D)      &kp PAGE_UP     &mkp MCLK       &kp PAGE_DOWN    &kp K_APP
+&kp LCTRL   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mo 5                   &trans  &kp LALT       &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mo 5
 &kp LSHIFT  &none           &kp LG(P)       &kp LS(LG(S))    &kp LALT   &kp LG(E)    &trans  &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT
 &kp LALT    &trans          &trans          &trans           &trans     &trans       &trans  &kp BACKSPACE                                                   &kp RCTRL
             >;
