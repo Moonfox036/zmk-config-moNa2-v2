@@ -54,7 +54,7 @@ layers:
   - Sft+8
   - Sft+9
   - '='
-  - Alt+TAB
+  - '&alt_tab'
   - LEFT ALT
   - ;
   - ''''
@@ -178,9 +178,9 @@ layers:
   - UP ARROW
   - END
   - LSHFT
-  - '&mkp MCLK'
-  - PAGE UP
   - Gui+D
+  - PAGE UP
+  - '&mkp MCLK'
   - PAGE DOWN
   - APP
   - LCTRL
@@ -189,7 +189,7 @@ layers:
   - RIGHT ARROW
   - scroll_layer5
   - {t: ▽, type: trans}
-  - '&mkp MCLK'
+  - LALT
   - '&mkp LCLK'
   - UP ARROW
   - '&mkp RCLK'
